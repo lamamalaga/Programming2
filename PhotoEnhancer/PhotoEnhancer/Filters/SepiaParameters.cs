@@ -8,7 +8,8 @@ namespace PhotoEnhancer
 {
     class SepiaParameters : IParameters
     {
-        public double SepiaParameterHSByUser { get; set; }
+        public double SepiaParameterHueByUser { get; set; }
+        public double SepiaParameterSaturationByUser { get; set; }
 
         public ParameterInfo[] GetDescription()
         {
@@ -35,7 +36,8 @@ namespace PhotoEnhancer
 
         public void SetValues(double[] values)
         {
-            SepiaParameterHSByUser = values[0];
+            SepiaParameterHueByUser = values[0];
+            SepiaParameterSaturationByUser = values[1];
         }
     }
 }

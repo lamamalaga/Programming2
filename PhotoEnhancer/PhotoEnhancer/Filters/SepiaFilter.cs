@@ -21,8 +21,8 @@ namespace PhotoEnhancer
             var origL = Convertors.GetPixelLightness(originalPixel);
 
 
-            var newH = (parameters as SepiaParameters).SepiaParameterHSByUser;
-            var newS = (parameters as SepiaParameters).SepiaParameterHSByUser;
+            var newH = (parameters as SepiaParameters).SepiaParameterHueByUser;
+            var newS = (parameters as SepiaParameters).SepiaParameterSaturationByUser;
             return Convertors.HSL2Pixel(newH, newS, origL);
         }
     }
